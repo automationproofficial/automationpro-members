@@ -8,30 +8,23 @@
 </head>
 <body>
   <div class="container">
-    <div id="login" class="section">
-      <h1>Members Area Login</h1>
-      <p>Enter your access password to unlock the members area.</p>
-      <input type="password" id="password" placeholder="Enter password" />
-      <button onclick="verifyPassword()">Enter</button>
-      <div id="error" class="error">Incorrect password. Try again.</div>
-    </div>
+    <h1>Welcome to Automation Pro Members Area</h1>
+    <p>Watch the demo video below and download your full package.</p>
 
-    <div id="members" class="section hidden">
-      <h1>Welcome to Automation Pro Members Area</h1>
-      <p>Watch the demo video below and download your full package.</p>
-      <video width="100%" controls poster="thumbnail.jpg">
-        <source src="demo.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <br/><br/>
-      <a href="AutomationPro_Package.zip" download class="download-button">⬇ Download Full Package</a>
-      <div class="bot-widget">
-        <h2>Need Help?</h2>
-        <iframe src="https://chat.openai.com/" width="100%" height="400" style="border:1px solid #333; border-radius:8px;"></iframe>
-      </div>
-    </div>
+    <!-- Video Placeholder -->
+    <video controls width="100%" style="max-width: 720px; margin: 2rem 0;">
+      <source src="demo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Download Button -->
+    <a href="AutomationPro_Package.zip" class="button" download>⬇ Download Full Package</a>
+
+    <!-- ChatGPT Assistant Link -->
+    <h2 style="margin-top: 3rem;">Need Help?</h2>
+    <p>You can use GPT to assist you with installation. Just click the button below and upload your Setup Guide PDF:</p>
+    <a href="https://chat.openai.com" target="_blank" class="button">💬 Launch ChatGPT Assistant</a>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
+
